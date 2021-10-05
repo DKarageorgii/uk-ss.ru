@@ -134,7 +134,7 @@ a:hover {
 }
 @media (max-width: 320px) {
   .d-btn {
-    padding: 7px 20px;
+    padding: 7px 15px;
     font-size: 14px;
   }
 }
@@ -479,9 +479,18 @@ div.divider.double-line::before {
   }
 }
 .requisites-block {
-  padding: 4.65% 0 4.65% 7.1%;
+  padding: 60px 90px 60px 90px;
 }
-
+@media (max-width: 768px) {
+  .requisites-block {
+    padding: 60px 40px 60px 40px;
+  }
+}
+@media (max-width: 320px) {
+  .requisites-block {
+    padding: 30px 20px 30px 20px;
+  }
+}
 .h-contact {
   margin-bottom: 2.5rem;
 }
