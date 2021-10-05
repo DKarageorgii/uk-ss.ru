@@ -443,14 +443,9 @@ div.divider.double-line::before {
   border-top: 1px solid #ddd;
 }
 .requisites-column-1 {
-  font-style: normal;
   margin-bottom: 20px;
 }
-@media (max-width: 768px) {
-  .requisites-column-1 {
-    margin-bottom: 10px;
-  }
-}
+
 @media (max-width: 320px) {
   .requisites-column-1 {
     margin-bottom: 0;
@@ -545,10 +540,6 @@ dt {
 
 .footercolumn-1 {
   list-style-type: none;
-  color: #707070;
-  font-family: Inter;
-  font-size: 1rem;
-  font style: 400;
   padding: 0;
 }
 
@@ -575,7 +566,6 @@ dt {
 
 .footercolumn-2 {
   list-style-type: none;
-  font-family: Inter;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.21rem;
