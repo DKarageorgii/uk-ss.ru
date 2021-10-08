@@ -1,0 +1,48 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    h1 {
+        @apply text-4xl font-semibold mb-5 text-black;
+    }
+    a {
+        @apply text-black;
+    }
+    a {
+        cursor: pointer;
+    }
+    a:hover {
+        color: #B45055;
+    }
+}
+@layer utilities {
+    .d-bg-r {
+		--tw-bg-opacity: 1;
+        background-color: #B45055;
+    }
+	.hover\:d-bg-br:hover {
+		--tw-bg-opacity: 1;
+        background-color: #CE5E64;
+    }
+	.py-1-5 {
+		padding-top: 0.3125rem;
+		padding-bottom: 0.3125rem;
+	}
+	.px-3-5 {
+		padding-left: 0.9375rem;
+		padding-right: 0.9375rem;
+	}
+	.bg-fon {
+		background: #FBFBFB url('/img/logo-bg-01.png');
+		background-position: 0 50px;
+		background-repeat: no-repeat;
+		background-size: auto 500px;
+		background-attachment: fixed;
+	  }
+}

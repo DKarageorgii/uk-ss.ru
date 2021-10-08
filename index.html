@@ -46,7 +46,7 @@
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header shadow-sm" style="border-bottom: 2px #ccc solid;">
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-xs-12 col-md-6">
                     <div id="offcanvasNavbarLabel" style="margin-right: 25px;">
                       <a href="index.html" title="УК СТРОЙСПЕЦИАЛИСТ" style="display: inline-block;position: relative; z-index: 1;">
                           <span style="display: inline-block;">
@@ -315,7 +315,7 @@
           <img class="navbar-brand-logo" src="img/logo.png" height="35" alt="УК СТРОЙСПЕЦИАЛИСТ" title="УК СТРОЙСПЕЦИАЛИСТ">
         </object>
       </div>
-      <div class="d-flex flex-column-reverse justify-content-between flex-sm-row bd-highlight mb-3">
+      <div class="d-flex flex-column-reverse justify-content-between flex-sm-row bd-highlight">
         <div class="bd-highlight footerblock-1">
           <ul class="footercolumn-1">
             <li class="col-1_item">Москва, ул. Докукина, д.16с3</li>
@@ -373,28 +373,34 @@
     </div>
   </footer>
 
-  <!-- Modal ЗАКАЗАТЬ ЗВОНОК -->
+  <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
+      <div class="modal-content hwaw-block shadow-modal">
         <div class="modal-header">
-          <h5 class="fs-2 modal-title" id="exampleModalLabel">Заказать звонок</h5>
+          <h3 style="font-size: 20px;" class="modal-title" id="exampleModalLabel">Заказать звонок</h3>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <form>
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Ваш номер телефона:</label>
-              <input type="text" class="form-control" id="recipient-name">
+              <label for="recipient-name" class="col-form-label">Имя</label>
+              <input type="text" class="form-control" placeholder="Имя" id="recipient-name">
             </div>
             <div class="mb-3">
-              <label for="message-text" class="col-form-label">Сообщение:</label>
-              <textarea class="form-control" id="message-text"></textarea>
+              <label for="recipient-name" class="col-form-label">Телефон</label>
+              <input type="text" class="form-control" placeholder="Телефон" id="recipient-tel">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Ваш комментарий</label>
+              <textarea class="form-control" placeholder="Название компании; Ваш вопрос" id="message-text"></textarea>
             </div>
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-of">Отправить сообщение</button>
+          <div class="d-grid gap-2 col-11 mx-auto">
+            <button type="button" class="btn btn-of">Бесплатная консультация</button>
+          </div>
         </div>
       </div>
     </div>
